@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <div class="app-main-layout">
+                <nav class="navbar orange lighten-1">
+                    <div class="nav-wrapper">
+                        <div class="navbar-left">
+                            <a href="#">
+                                <i class="material-icons black-text">dehaze</i>
+                            </a>
+                            <span class="black-text">12.12.12</span>
+                        </div>
+
+                        <ul class="right hide-on-small-and-down">
+                            <li>
+                                <a
+                                    class="dropdown-trigger black-text"
+                                    href="#"
+                                    data-target="dropdown"
+                                >
+                                    USER NAME
+                                    <i class="material-icons right"
+                                        >arrow_drop_down</i
+                                    >
+                                </a>
+
+                                <ul id="dropdown" class="dropdown-content">
+                                    <li>
+                                        <a href="#" class="black-text">
+                                            <i class="material-icons"
+                                                >account_circle</i
+                                            >Профиль
+                                        </a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="#" class="black-text">
+                                            <i class="material-icons"
+                                                >assignment_return</i
+                                            >Выйти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <ul class="sidenav app-sidenav open">
+                    <li>
+                        <a href="#" class="waves-effect waves-orange pointer"
+                            >Расписание
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                        <ul id="dropdown" class="dropdown-content">
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Мое расписание понедельно
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons"
+                                        >assignment_return</i
+                                    >Мое расписание общее
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Расписание другого преподователя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Общее расписание другого преподавателя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Сгенерировать отчет
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Список переносов
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Добавить пару
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect waves-orange pointer"
+                            >Преподаватели</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect waves-orange pointer"
+                            >Справочники
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <main class="app-content">
+                    <div class="app-page">
+                        <div>
+                            <div class="page-title">
+                                <h3>Расписание</h3>
+                            </div>
+
+                            <table class="timetable centered" cellpadding="5">
+                                <tr class="timetable">
+                                    <td></td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>Пн</td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                        <hr />
+                                        <span>Гражданская оборона</span>
+                                        <br />
+                                        <span>Ефимов В.Г.</span>
+                                        <br />
+                                        <span>2.234</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Вт</td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                        <hr />
+                                        <span>Гражданская оборона</span>
+                                        <br />
+                                        <span>Ефимов В.Г.</span>
+                                        <br />
+                                        <span>2.234</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                        <hr />
+                                        <span>Гражданская оборона</span>
+                                        <br />
+                                        <span>Ефимов В.Г.</span>
+                                        <br />
+                                        <span>2.234</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                        <hr />
+                                        <span>Гражданская оборона</span>
+                                        <br />
+                                        <span>Ефимов В.Г.</span>
+                                        <br />
+                                        <span>2.234</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                        <hr />
+                                        <span>Гражданская оборона</span>
+                                        <br />
+                                        <span>Ефимов В.Г.</span>
+                                        <br />
+                                        <span>2.234</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                        <hr />
+                                        <span>Гражданская оборона</span>
+                                        <br />
+                                        <span>Ефимов В.Г.</span>
+                                        <br />
+                                        <span>2.234</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td>
+                                        <span
+                                            >Численные методы в
+                                            информатике</span
+                                        >
+                                        <br />
+                                        <span>Судаков С.Н.</span>
+                                        <br />
+                                        <span>5.427</span>
+                                        <span>Лекция</span>
+                                        <hr />
+                                        <span>Гражданская оборона</span>
+                                        <br />
+                                        <span>Ефимов В.Г.</span>
+                                        <br />
+                                        <span>2.234</span>
+                                        <span>Лекция</span>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Ср</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Чт</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Пт</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Сб</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Вс</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
+</html>

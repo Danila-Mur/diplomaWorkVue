@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <div class="app-main-layout">
+                <nav class="navbar orange lighten-1">
+                    <div class="nav-wrapper">
+                        <div class="navbar-left">
+                            <a href="#">
+                                <i class="material-icons black-text">dehaze</i>
+                            </a>
+                            <span class="black-text">12.12.12</span>
+                        </div>
+
+                        <ul class="right hide-on-small-and-down">
+                            <li>
+                                <a
+                                    class="dropdown-trigger black-text"
+                                    href="#"
+                                    data-target="dropdown"
+                                >
+                                    USER NAME
+                                    <i class="material-icons right"
+                                        >arrow_drop_down</i
+                                    >
+                                </a>
+
+                                <ul id="dropdown" class="dropdown-content">
+                                    <li>
+                                        <a href="#" class="black-text">
+                                            <i class="material-icons"
+                                                >account_circle</i
+                                            >Профиль
+                                        </a>
+                                    </li>
+                                    <li class="divider" tabindex="-1"></li>
+                                    <li>
+                                        <a href="#" class="black-text">
+                                            <i class="material-icons"
+                                                >assignment_return</i
+                                            >Выйти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <ul class="sidenav app-sidenav open">
+                    <li>
+                        <a href="#" class="waves-effect waves-orange pointer"
+                            >Расписание
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                        <ul id="dropdown" class="dropdown-content">
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Мое расписание понедельно
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons"
+                                        >assignment_return</i
+                                    >Мое расписание общее
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Расписание другого преподователя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Общее расписание другого преподавателя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Сгенерировать отчет
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Список переносов
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="black-text">
+                                    <i class="material-icons">account_circle</i
+                                    >Добавить пару
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect waves-orange pointer"
+                            >Преподаватели</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="waves-effect waves-orange pointer"
+                            >Справочники
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+
+                <main class="app-content">
+                    <div class="app-page">
+                        <div>
+                            <div class="page-title">
+                                <h3>Список преподавателей</h3>
+                                <button
+                                    data-target="modal1"
+                                    class="modal-trigger btn waves-effect waves-light btn-small"
+                                >
+                                    <a class="modal-trigger" href="#modal1"
+                                        ><i class="material-icons">add</i></a
+                                    >
+                                </button>
+                            </div>
+                            <section>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="card-content">
+                                            <form class="form">
+                                                <div class="col s6">
+                                                    <select
+                                                        class="browser-default"
+                                                    >
+                                                        <option
+                                                            value=""
+                                                            disabled
+                                                            selected
+                                                        >
+                                                            Выберите факультет
+                                                        </option>
+                                                        <option value="1">
+                                                            факультет 1
+                                                        </option>
+                                                        <option value="2">
+                                                            факультет 2
+                                                        </option>
+                                                        <option value="3">
+                                                            факультет 3
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col s6">
+                                                    <select
+                                                        class="browser-default"
+                                                    >
+                                                        <option
+                                                            value=""
+                                                            disabled
+                                                            selected
+                                                        >
+                                                            Выберите кафедру
+                                                        </option>
+                                                        <option value="1">
+                                                            кафедра 1
+                                                        </option>
+                                                        <option value="2">
+                                                            кафедра 2
+                                                        </option>
+                                                        <option value="3">
+                                                            кафедра 3
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="row">
+                                        <div class="col s2">Фамилия</div>
+                                        <div class="col s2">Имя</div>
+                                        <div class="col s2">Отчество</div>
+                                        <div class="col s2">Логин</div>
+                                        <div class="col s2">Фото</div>
+                                        <div class="col s2">
+                                            Предметы преподователя которые может
+                                            вести
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                            <h5>Добавить преподавателя</h5>
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <input
+                                            id="first_name"
+                                            type="text"
+                                            class="validate"
+                                        />
+                                        <label for="first_name"
+                                            >Введите имя</label
+                                        >
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input
+                                            id="last_name"
+                                            type="text"
+                                            class="validate"
+                                        />
+                                        <label for="last_name"
+                                            >Введите фамилию</label
+                                        >
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input
+                                            id="third_name"
+                                            type="text"
+                                            class="validate"
+                                        />
+                                        <label for="third_name"
+                                            >Введите отчество</label
+                                        >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <input
+                                            id="login"
+                                            type="text"
+                                            class="validate"
+                                        />
+                                        <label for="login">Введите логин</label>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <input
+                                            id="password"
+                                            type="text"
+                                            class="validate"
+                                        />
+                                        <label for="password"
+                                            >Введите пароль</label
+                                        >
+                                    </div>
+                                    <div class="input-field file-field col s4">
+                                        <div class="btn">
+                                            <span>File</span>
+                                            <input type="file" />
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input
+                                                class="file-path validate"
+                                                type="text"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+                                            <option value="" disabled selected>
+                                                Выберите факультет
+                                            </option>
+                                            <option value="1">
+                                                факультет 1
+                                            </option>
+                                            <option value="2">
+                                                факультет 2
+                                            </option>
+                                            <option value="3">
+                                                факультет 3
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+                                            <option value="" disabled selected>
+                                                Выберите кафедру
+                                            </option>
+                                            <option value="1">кафедра 1</option>
+                                            <option value="2">кафедра 2</option>
+                                            <option value="3">кафедра 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field col s4">
+                                        <select class="browser-default">
+                                            <option value="" disabled selected>
+                                                Выберите должность
+                                            </option>
+                                            <option value="1">
+                                                должность 1
+                                            </option>
+                                            <option value="2">
+                                                должность 2
+                                            </option>
+                                            <option value="3">
+                                                должность 3
+                                            </option>
+                                            <option value="3">
+                                                должность 4
+                                            </option>
+                                            <option value="3">
+                                                должность 5
+                                            </option>
+                                            <option value="3">
+                                                должность 6
+                                            </option>
+                                            <option value="3">
+                                                должность 7
+                                            </option>
+                                            <option value="3">
+                                                должность 8
+                                            </option>
+                                            <option value="3">
+                                                должность 9
+                                            </option>
+                                            <option value="3">
+                                                должность 10
+                                            </option>
+                                            <option value="3">
+                                                должность 11
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a
+                                href="#!"
+                                class="modal-action modal-close waves-effect waves-light btn-flat"
+                                >Добавить</a
+                            >
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

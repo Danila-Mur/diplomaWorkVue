@@ -1,27 +1,53 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
-
-const router = new VueRouter({
-  routes
-})
-
-export default router
+export default new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      meta: { layout: 'main' },
+      component: () => import('../views/Home.vue'),
+    },
+    {
+      path: '/login',
+      name: 'login',
+      meta: { layout: 'empty' },
+      component: () => import('../views/Login.vue'),
+    },
+    {
+      path: '/mytimetable',
+      name: 'mytimetable',
+      meta: { layout: 'main' },
+      component: () => import('../views/MyTimetable.vue'),
+    },
+    {
+      path: '/mygeneraltimetable',
+      name: 'mygeneraltimetable',
+      meta: { layout: 'main' },
+      component: () => import('../views/MyGeneralTimetable.vue'),
+    },
+    {
+      path: '/generatereport',
+      name: 'generatereport ',
+      meta: { layout: 'main' },
+      component: () => import('../views/GenerateReport.vue'),
+    },
+    {
+      path: '/teachers',
+      name: 'teachers',
+      meta: { layout: 'main' },
+      component: () => import('../views/Teachers.vue'),
+    },
+    {
+      path: '/audience',
+      name: 'audience',
+      meta: { layout: 'main' },
+      component: () => import('../views/Audience.vue'),
+    },
+  ],
+});
