@@ -6,10 +6,10 @@
     <table
       class="timetable centered"
       cellpadding="5"
-      v-for="day of timetable"
-      :key="day"
+      v-for="key in timetable"
+      :key="key"
     >
-      <tr class="timetable">
+      <tr>
         <td></td>
         <td>1</td>
         <td>2</td>
@@ -19,8 +19,6 @@
         <td>6</td>
         <td>7</td>
       </tr>
-      <!-- <tr v-for="day of Object(data.timetable)"> -->
-      <!-- <tr data.timetable[key]> -->
       <tr>
         <td>Пн</td>
         <td class="cell">
@@ -101,7 +99,7 @@
               <i class="small material-icons">delete</i>
             </div>
             <div class="item" :class="{ active: isActive }">
-              <span>{{ day }}</span>
+              <span></span>
               <br />
               <span></span>
               <br />
@@ -116,9 +114,7 @@
                 <i class="small material-icons">delete</i>
               </div>
               <div class="item" :class="{ active: isActive }">
-                <span>
-                  {{ timetable.subject }}
-                </span>
+                <span> </span>
                 <br />
                 <span></span>
                 <br />
@@ -230,15 +226,17 @@
           <div class="item" :class="{ active: isActive }"></div>
         </td>
       </tr>
-      <tr>
+      <tr v-for="item in key" :key="item | filterBy">
         <td>Ср</td>
-        <td class="cell">
+        <td class="cell" v-for="val in item" :key="val">
           <div class="icons">
             <i class="small material-icons">create</i>
             <i class="small material-icons" @click="openModal">add</i>
             <i class="small material-icons">delete</i>
           </div>
-          <div class="item" :class="{ active: isActive }"></div>
+          <div class="item" :class="{ active: isActive }">
+            {{ val | wed }}
+          </div>
         </td>
         <td class="cell">
           <div class="icons">
@@ -547,7 +545,6 @@ export default {
     iconHidden: false,
     modalClass: '.modal',
     instance: null,
-    timetables: [],
   }),
   computed: {
     ...mapState({
@@ -555,6 +552,9 @@ export default {
       error: (state) => state.timetable.error,
       timetable: (state) => state.timetable,
     }),
+    // dayOfWeek() {
+    //   return this.timetable.filter(day => day.)
+    // },
   },
   beforeMount() {
     this[[actionTypes.getTimetable]]();
