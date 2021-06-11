@@ -1,11 +1,11 @@
 {
   "timetable": {
-    "tue": [
+    "Mon": [
       {
         "id": 1,
         "subject": {
           "id": 1,
-          "name": "Базы данных",
+          "name": "Базы данных(1 пара понедельник)",
           "department_id": 5
         },
         "employment_type": {
@@ -78,7 +78,7 @@
         "id": 2,
         "subject": {
           "id": 1,
-          "name": "Базы данных",
+          "name": "Базы данных(2 пара понедельник)",
           "department_id": 5
         },
         "employment_type": {
@@ -199,7 +199,7 @@
         "id": 3,
         "subject": {
           "id": 1,
-          "name": "Базы данных",
+          "name": "Базы данных(3 пара понедельник)",
           "department_id": 5
         },
         "employment_type": {
@@ -272,7 +272,274 @@
         "id": 4,
         "subject": {
           "id": 1,
-          "name": "Базы данных",
+          "name": "Базы данных(4 пара понедельник)",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 4,
+          "building_number": 4,
+          "auditorium_number": 10
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 5,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 5,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "б",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2020
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных(2 пара понедельник)",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 2,
+          "building_number": 8,
+          "auditorium_number": 708
+        },
+        "lesson_type": {
+          "id": 1,
+          "type": "Лекции",
+          "period": "Семестр"
+        },
+        "week_type": "down",
+        "number": 3,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 1,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "а",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          },
+          {
+            "id": 2,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "б",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          },
+          {
+            "id": 3,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "в",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных(3 пара понедельник)",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 3,
+          "building_number": 4,
+          "auditorium_number": 1
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 4,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 6,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "в",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2020
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных(4 пара понедельник)",
           "department_id": 5
         },
         "employment_type": {
@@ -342,7 +609,422 @@
         ]
       }
     ],
-    "wed": [
+    "Tue": [
+      {
+        "id": 1,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных(1 пара вторник)",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 1,
+          "building_number": 5,
+          "auditorium_number": 429
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "up",
+        "number": 3,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 3,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "в",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных(2 пара вторник)",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 2,
+          "building_number": 8,
+          "auditorium_number": 708
+        },
+        "lesson_type": {
+          "id": 1,
+          "type": "Лекции",
+          "period": "Семестр"
+        },
+        "week_type": "down",
+        "number": 3,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 1,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "а",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          },
+          {
+            "id": 2,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "б",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          },
+          {
+            "id": 3,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "в",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных(3 пара вторник)",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 3,
+          "building_number": 4,
+          "auditorium_number": 1
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 4,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 6,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "в",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2020
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных(4 пара вторник)",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 4,
+          "building_number": 4,
+          "auditorium_number": 10
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 5,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 5,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "б",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2020
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "subject": {
+          "id": 1,
+          "name": "",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": ""
+        },
+        "auditorium": {
+          "id": 4,
+          "building_number": 4,
+          "auditorium_number": 10
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "",
+          "period": "Се местр"
+        },
+        "week_type": "always",
+        "number": 5,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 5,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "б",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2020
+          }
+        ]
+      }
+    ],
+    "Wed": [
       {
         "id": 5,
         "subject": {
@@ -490,7 +1172,7 @@
         ]
       }
     ],
-    "thu": [
+    "Thu": [
       {
         "id": 7,
         "subject": {
@@ -711,7 +1393,449 @@
         ]
       }
     ],
-    "fri": [
+    "Fri": [
+      {
+        "id": 10,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 3,
+          "building_number": 4,
+          "auditorium_number": 1
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "up",
+        "number": 1,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 2,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "б",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 5,
+          "building_number": 5,
+          "auditorium_number": 432
+        },
+        "lesson_type": {
+          "id": 1,
+          "type": "Лекции",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 2,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 7,
+            "specialty": {
+              "id": 2,
+              "name": "Системы автоматизированного проектирования",
+              "abbreviation": "САПР"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": null,
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2017
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 4,
+          "building_number": 4,
+          "auditorium_number": 10
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 4,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 4,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "а",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2020
+          }
+        ]
+      }
+    ],
+    "Sat": [
+      {
+        "id": 10,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 3,
+          "building_number": 4,
+          "auditorium_number": 1
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "up",
+        "number": 1,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 2,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "б",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2019
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 5,
+          "building_number": 5,
+          "auditorium_number": 432
+        },
+        "lesson_type": {
+          "id": 1,
+          "type": "Лекции",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 2,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 7,
+            "specialty": {
+              "id": 2,
+              "name": "Системы автоматизированного проектирования",
+              "abbreviation": "САПР"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": null,
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2017
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "subject": {
+          "id": 1,
+          "name": "Базы данных",
+          "department_id": 5
+        },
+        "employment_type": {
+          "id": 1,
+          "type": "Полная"
+        },
+        "auditorium": {
+          "id": 4,
+          "building_number": 4,
+          "auditorium_number": 10
+        },
+        "lesson_type": {
+          "id": 2,
+          "type": "Практические (семинарские) занятия",
+          "period": "Семестр"
+        },
+        "week_type": "always",
+        "number": 4,
+        "lecturers": [
+          {
+            "id": 1,
+            "last_name": "Щедрин",
+            "first_name": "Сергей",
+            "middle_name": "Валерьевич",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
+          }
+        ],
+        "groups": [
+          {
+            "id": 4,
+            "specialty": {
+              "id": 1,
+              "name": "Программная инженерия",
+              "abbreviation": "ПИ"
+            },
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "subgroup": "а",
+            "education_type": {
+              "id": 1,
+              "type": "Очное"
+            },
+            "admission_year": 2020
+          }
+        ]
+      }
+    ],
+    "Sun": [
       {
         "id": 10,
         "subject": {

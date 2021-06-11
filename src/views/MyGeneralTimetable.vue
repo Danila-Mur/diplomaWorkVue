@@ -6,8 +6,8 @@
     <table
       class="timetable centered"
       cellpadding="5"
-      v-for="key in timetable"
-      :key="key"
+      v-for="value in Object.values(timetable)"
+      :key="value"
     >
       <tr>
         <td></td>
@@ -19,275 +19,59 @@
         <td>6</td>
         <td>7</td>
       </tr>
-      <tr>
-        <td>Пн</td>
-        <td class="cell">
-          <div class="cell__wrapper">
-            <div class="icons">
-              <i class="small material-icons">create</i>
-              <i class="small material-icons" @click="openModal">add</i>
-              <i class="small material-icons">delete</i>
-            </div>
-            <div class="item" :class="{ active: isActive }">
-              <!-- <span>Численные методы в информатике</span>
-              <br />
-              <span>Судаков С.Н.</span>
-              <br />
-              <span>5.427</span>
-              <span>Лекция</span> <br />
-              <span>Пи-17А</span> -->
-            </div>
-          </div>
-          <hr />
-          <div class="cell__wrapper">
-            <div class="icons">
-              <i class="small material-icons">create</i>
-              <i class="small material-icons" @click="openModal">add</i>
-              <i class="small material-icons">delete</i>
-            </div>
-            <div class="item" :class="{ active: isActive }">
-              <!-- <span>Гражданская оборона</span>
-              <br />
-              <span>Ефимов В.Г.</span>
-              <br />
-              <span>2.234</span><br />
-              <span>Лекция</span><br />
-              <span>Пи-17А</span> -->
-            </div>
-          </div>
-        </td>
-        <td class="cell">
-          <div class="cell__wrapper">
-            <div class="icons">
-              <i class="small material-icons">create</i>
-              <i class="small material-icons" @click="openModal">add</i>
-              <i class="small material-icons">delete</i>
-            </div>
-            <div class="item" :class="{ active: isActive }">
-              <!-- <span>Численные методы в информатике</span>
-              <br />
-              <span>Судаков С.Н.</span>
-              <br />
-              <span>5.427</span>
-              <span>Лекция</span> <br />
-              <span>Пи-17А</span> -->
-            </div>
-            <hr />
-            <div class="cell__wrapper">
-              <div class="icons">
-                <i class="small material-icons">create</i>
-                <i class="small material-icons" @click="openModal">add</i>
-                <i class="small material-icons">delete</i>
-              </div>
-              <div class="item" :class="{ active: isActive }">
-                <!-- <span>Гражданская оборона</span>
-                <br />
-                <span>Ефимов В.Г.</span>
-                <br />
-                <span>2.234</span><br />
-                <span>Лекция</span><br />
-                <span>Пи-17А</span> -->
-              </div>
-            </div>
-          </div>
-        </td>
-        <td class="cell" v-if="timetable">
-          <div class="cell__wrapper">
-            <div class="icons">
-              <i class="small material-icons">create</i>
-              <i class="small material-icons" @click="openModal">add</i>
-              <i class="small material-icons">delete</i>
-            </div>
-            <div class="item" :class="{ active: isActive }">
-              <span></span>
-              <br />
-              <span></span>
-              <br />
-              <span></span> <br />
-              <span></span>
-            </div>
-            <hr />
-            <div class="cell__wrapper">
-              <div class="icons">
-                <i class="small material-icons">create</i>
-                <i class="small material-icons" @click="openModal">add</i>
-                <i class="small material-icons">delete</i>
-              </div>
-              <div class="item" :class="{ active: isActive }">
-                <span> </span>
-                <br />
-                <span></span>
-                <br />
-                <span></span><br />
-                <span></span><br />
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </td>
-        <td class="cell">
-          <div class="cell__wrapper">
-            <div class="icons">
-              <i class="small material-icons">create</i>
-              <i class="small material-icons" @click="openModal">add</i>
-              <i class="small material-icons">delete</i>
-            </div>
-            <div class="item" :class="{ active: isActive }">
-              <!-- <span>Численные методы в информатике</span>
-              <br />
-              <span>Судаков С.Н.</span>
-              <br />
-              <span>5.427</span>
-              <span>Лекция</span> -->
-            </div>
-          </div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-      </tr>
-      <tr>
-        <td>Вт</td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-      </tr>
-      <tr v-for="item in key" :key="item | filterBy">
-        <td>Ср</td>
-        <td class="cell" v-for="val in item" :key="val">
+      <tr v-for="(index, item) in value" :key="item">
+        <td>{{ item }}</td>
+        <td
+          class="cell"
+          v-for="(index, key) in Object.values(index)"
+          :key="key"
+        >
           <div class="icons">
             <i class="small material-icons">create</i>
             <i class="small material-icons" @click="openModal">add</i>
             <i class="small material-icons">delete</i>
           </div>
           <div class="item" :class="{ active: isActive }">
-            {{ val | wed }}
+            <span
+              v-for="(index, subject) in Object.values(index)"
+              :key="subject"
+            >
+              {{ index.name }}
+            </span>
+            <br />
+            <span
+              v-for="lecturer in Object.values(index.lecturers)"
+              :key="lecturer"
+            >
+              {{ lecturer.last_name }}
+              {{ lecturer.first_name }}
+              {{ lecturer.middle_name }}
+            </span>
+            <br />
+            <span
+              v-for="auditoriums in Object.values(index.auditorium)"
+              :key="auditoriums"
+            >
+              {{ index.auditorium.building_number }}.{{
+                index.auditorium.auditorium_number
+              }}
+            </span>
+            <br />
+            <span
+              v-for="lessonType in Object.values(index)"
+              :key="lessonType"
+              >{{ index.lesson_type.type }}</span
+            >
+            <br />
+            <!-- <span v-for="group in Object.values(key.groups)" :key="group"
+              >{{ group.specialty.abbreviation }}-{{
+                group.admission_year
+              }}</span
+            > -->
           </div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
-        </td>
-        <td class="cell">
-          <div class="icons">
-            <i class="small material-icons">create</i>
-            <i class="small material-icons" @click="openModal">add</i>
-            <i class="small material-icons">delete</i>
-          </div>
-          <div class="item" :class="{ active: isActive }"></div>
         </td>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>Чт</td>
         <td class="cell">
           <div class="icons">
@@ -522,7 +306,7 @@
           </div>
           <div class="item" :class="{ active: isActive }"></div>
         </td>
-      </tr>
+      </tr> -->
     </table>
 
     <timetable-form :isModalOpen="iconHidden" />
@@ -545,6 +329,7 @@ export default {
     iconHidden: false,
     modalClass: '.modal',
     instance: null,
+    days: {},
   }),
   computed: {
     ...mapState({
@@ -552,11 +337,13 @@ export default {
       error: (state) => state.timetable.error,
       timetable: (state) => state.timetable,
     }),
-    // dayOfWeek() {
-    //   return this.timetable.filter(day => day.)
-    // },
+    sliceYear() {
+      return String(Object.values(this.timetable.groups)).slice(2);
+    },
   },
   beforeMount() {
+    console.log('d', this.timetable);
+
     this[[actionTypes.getTimetable]]();
   },
   mounted() {
