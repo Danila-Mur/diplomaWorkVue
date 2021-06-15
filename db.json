@@ -118,6 +118,27 @@
               "id": 2,
               "position": "Ассистент"
             }
+          },
+          {
+            "id": 1,
+            "last_name": "Коломойцева",
+            "first_name": "Ирина",
+            "middle_name": "Александровна",
+            "username": "shedrin",
+            "department": {
+              "id": 5,
+              "name": "Программной инженерии",
+              "abbreviation": "ПИ"
+            },
+            "faculty": {
+              "id": 5,
+              "name": "Компьютерных наук и технологий",
+              "abbreviation": "ФКНТ"
+            },
+            "position": {
+              "id": 2,
+              "position": "Ассистент"
+            }
           }
         ],
         "groups": [

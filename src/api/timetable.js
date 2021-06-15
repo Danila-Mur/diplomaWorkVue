@@ -4,14 +4,14 @@ const getTimetable = () => {
   return axios.get(`/timetable`).then((response) => response.data);
 };
 
-const deleteTimetable = (slug) => {
-  return axios.delete(`/delete/${slug}`);
+const deleteTimetable = () => {
+  return axios.delete(`/timetable`);
 };
 
 const createTimetable = (timetableInput) => {
   return axios
-    .post('/post', { timetable: timetableInput })
-    .then((response) => response.data.timetable);
+    .post('/timetable', { timetable: timetableInput })
+    .then((response) => response.data);
 };
 
 export default {

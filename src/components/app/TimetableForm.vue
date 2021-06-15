@@ -8,7 +8,7 @@
     >
       <div class="modal-content">
         <h5>Добавить пару</h5>
-        <form class="col s15" @submit.prevent="onSubmit">
+        <form class="col s15">
           <div class="row">
             <div class="input-field col s5">
               <model-select
@@ -116,107 +116,108 @@ import M from 'materialize-css';
 import 'vue2-datepicker/index.css';
 import 'vue-search-select/dist/VueSearchSelect.css';
 // import _ from 'lodash';
-import { MultiSelect, ModelSelect } from 'vue-search-select';
-import { mapState } from 'vuex';
+import {MultiSelect, ModelSelect} from 'vue-search-select';
+import {mapState} from 'vuex';
 export default {
   name: 'TimetableForm',
-  components: { MultiSelect, ModelSelect },
+  components: {MultiSelect, ModelSelect},
   data: () => ({
     modalClass: '.modal',
     instance: null,
     showModal: false,
     datePeriod: null,
+    timetable: {},
     subjectOptions: [
-      { value: '1', text: 'Предмет' + ' - ' + '1' },
-      { value: '2', text: 'Предмет ' + ' - ' + '2' },
-      { value: '3', text: 'Предмет' + ' - ' + '3' },
-      { value: '4', text: 'Предмет' + ' - ' + '4' },
-      { value: '5', text: 'Предмет' + ' - ' + '5' },
+      {value: '1', text: 'Предмет' + ' - ' + '1'},
+      {value: '2', text: 'Предмет ' + ' - ' + '2'},
+      {value: '3', text: 'Предмет' + ' - ' + '3'},
+      {value: '4', text: 'Предмет' + ' - ' + '4'},
+      {value: '5', text: 'Предмет' + ' - ' + '5'}
     ],
     subject: {
-      name: '',
+      name: ''
     },
     teacherOptions: [
-      { value: '1', text: 'aa' + ' - ' + '1' },
-      { value: '2', text: 'ab' + ' - ' + '2' },
-      { value: '3', text: 'bc' + ' - ' + '3' },
-      { value: '4', text: 'cd' + ' - ' + '4' },
-      { value: '5', text: 'de' + ' - ' + '5' },
+      {value: '1', text: 'aa' + ' - ' + '1'},
+      {value: '2', text: 'ab' + ' - ' + '2'},
+      {value: '3', text: 'bc' + ' - ' + '3'},
+      {value: '4', text: 'cd' + ' - ' + '4'},
+      {value: '5', text: 'de' + ' - ' + '5'}
     ],
     searchText: '', // If value is falsy, reset searchText & searchItem
     teachers: [],
     groupOptions: [
-      { value: '1', text: 'ПИ' + ' - ' + '1' },
-      { value: '2', text: 'МИД' + ' - ' + '2' },
-      { value: '3', text: 'Группа' + ' - ' + '3' },
-      { value: '4', text: 'cd' + ' - ' + '4' },
-      { value: '5', text: 'de' + ' - ' + '5' },
+      {value: '1', text: 'ПИ' + ' - ' + '1'},
+      {value: '2', text: 'МИД' + ' - ' + '2'},
+      {value: '3', text: 'Группа' + ' - ' + '3'},
+      {value: '4', text: 'cd' + ' - ' + '4'},
+      {value: '5', text: 'de' + ' - ' + '5'}
     ],
     searchTextGroups: '', // If value is falsy, reset searchText & searchItem
     groups: [],
     lastSelectItem: {},
 
     typeOptions: [
-      { value: '1', text: 'Лекция' + ' - ' + '1' },
-      { value: '2', text: 'Практика ' + ' - ' + '2' },
-      { value: '3', text: 'Нирс' + ' - ' + '3' },
-      { value: '4', text: 'Курсовой' + ' - ' + '4' },
+      {value: '1', text: 'Лекция' + ' - ' + '1'},
+      {value: '2', text: 'Практика ' + ' - ' + '2'},
+      {value: '3', text: 'Нирс' + ' - ' + '3'},
+      {value: '4', text: 'Курсовой' + ' - ' + '4'}
     ],
     typeSubject: {
       value: '',
-      text: '',
+      text: ''
     },
     buildingOptions: [
-      { value: '1', text: '1' },
-      { value: '2', text: '2' },
-      { value: '3', text: '3' },
-      { value: '4', text: '4' },
+      {value: '1', text: '1'},
+      {value: '2', text: '2'},
+      {value: '3', text: '3'},
+      {value: '4', text: '4'}
     ],
     building: {
       value: '',
-      text: '',
+      text: ''
     },
     paymentOptions: [
-      { value: '1', text: 'Ставка' },
-      { value: '2', text: 'Пол ставки' },
+      {value: '1', text: 'Ставка'},
+      {value: '2', text: 'Пол ставки'}
     ],
     typePayment: {
       value: '',
-      text: '',
+      text: ''
     },
     facultyOptions: [
-      { value: '1', text: 'ФКТ' },
-      { value: '2', text: 'ФЭХТ' },
+      {value: '1', text: 'ФКТ'},
+      {value: '2', text: 'ФЭХТ'}
     ],
     faculties: {
       value: '',
-      text: '',
+      text: ''
     },
     departmentOptions: [
-      { value: '1', text: 'ФКТ' },
-      { value: '2', text: 'ФЭХТ' },
+      {value: '1', text: 'ФКТ'},
+      {value: '2', text: 'ФЭХТ'}
     ],
     departments: {
       value: '',
-      text: '',
-    },
+      text: ''
+    }
   }),
   computed: {
     ...mapState({
-      isSubmitting: (state) => state.createTimetable.isSubmitting,
-      validationErrors: (state) => state.createTimetable.validationErrors,
-    }),
+      isSubmitting: state => state.createTimetable.isSubmitting,
+      validationErrors: state => state.createTimetable.validationErrors
+    })
   },
   props: {
     isModalOpen: Boolean,
     initialValues: {
-      type: Object,
+      type: Object
       // required: true,
     },
     errors: {
       type: Object,
-      required: false,
-    },
+      required: false
+    }
   },
   mounted() {
     this.initModal();
@@ -224,12 +225,12 @@ export default {
   watch: {
     isModalOpen(curr) {
       curr && this.openModal();
-    },
+    }
   },
   methods: {
     initModal: function() {
       M.Modal.init(this.$refs.modal, {
-        opacity: 0.7,
+        opacity: 0.7
       });
       this.instance = M.Modal.getInstance(this.$refs.modal);
     },
@@ -238,11 +239,22 @@ export default {
     },
     onSubmit() {
       const timetableForm = {
-        subject: this.subject.name,
-        teachers: this.teachers,
-        building: this.building.text,
-        typeSubject: this.typeSubject.text,
-        groups: this.groups,
+        subject: this.timetable.subject.name,
+        lecturer: {
+          last_name: this.timetable.lecturer.last_name,
+          first_name: this.timetable.lecturer.first_name,
+          middle_name: this.timetable.lecturer.middle_name
+        },
+        building: {
+          building_number: this.timetable.auditorium.building_number,
+          auditorium_number: this.timetable.auditorium.auditorium_number
+        },
+        typeSubject: this.timetable.lesson_type.type,
+        groups: {
+          specialty: this.timetable.specialty.abbreviation,
+          admission_year: this.timetable.admission_year,
+          subgroup: this.timetable.subgroup
+        }
       };
       this.$emit('timetableSubmit', timetableForm);
     },
@@ -256,7 +268,7 @@ export default {
     onSelect(items, lastSelectItem) {
       this.items = items;
       this.lastSelectItem = lastSelectItem;
-    },
+    }
     // // deselect option
     // reset() {
     //   this.items = []; // reset
@@ -265,8 +277,6 @@ export default {
     // selectFromParentComponent() {
     //   this.items = _.unionWith(this.items, [this.options[0]], _.isEqual);
     // },
-  },
+  }
 };
 </script>
-
-// add destroy modal on beforeunmount // add entry data

@@ -1,7 +1,7 @@
 import timetableApi from '@/api/timetable';
 
 const state = {
-  isSubmiting: false,
+  isSubmitting: false,
   validationErrors: null,
 };
 
@@ -29,17 +29,17 @@ const mutations = {
 };
 
 const actions = {
-  [actionTypes.createTimetable](context, { timetableInput }) {
+  [actionTypes.createTimetable]({ commit }, { timetableInput }) {
     return new Promise((resolve) => {
-      context.commit(mutationTypes.createTimetableStart);
+      commit(mutationTypes.createTimetableStart);
       timetableApi
         .createTimetable(timetableInput)
         .then((timetable) => {
-          context.commit(mutationTypes.createTimetableSuccess, timetable);
+          commit(mutationTypes.createTimetableSuccess, timetable);
           resolve(timetable);
         })
         .catch((result) => {
-          context.commit(
+          commit(
             mutationTypes.createTimetableFailure,
             result.response.data.errors
           );

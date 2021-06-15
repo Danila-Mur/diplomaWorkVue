@@ -53,11 +53,11 @@ const actions = {
         });
     });
   },
-  [actionTypes.deleteTimetable]({ commit }, { slug }) {
+  [actionTypes.deleteTimetable]({ commit }) {
     return new Promise((resolve) => {
-      commit(mutationTypes.deleteTimetableStart, slug);
+      commit(mutationTypes.deleteTimetableStart);
       timetableApi
-        .deleteTimetable(slug)
+        .deleteTimetable()
         .then(() => {
           commit(mutationTypes.deleteTimetableSuccess);
           resolve();

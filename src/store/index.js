@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 
 import timetable from '@/store/modules/timetable';
+import createTimetable from '@/store/modules/createTimetable';
 
 Vue.use(Vuex);
 
@@ -86,5 +87,6 @@ export default new Vuex.Store({
   actions: {},
   modules: {
     timetable,
+    createTimetable,
   },
 });

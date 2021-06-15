@@ -1,47 +1,42 @@
 <template>
   <timetable-form
-    :initial-values="[]"
+    :initial-values="initialValues"
     :isSubmiting="true"
-    @timetableSubmit="() => console.log('submit')"
+    @timetableSubmit="onSubmit"
   ></timetable-form>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import {mapState, mapActions} from 'vuex';
 import TimetableForm from '@/components/app/TimetableForm';
-import { actionTypes } from '@/store/modules/createTimetable';
-import TimetableForm from '../components/app/TimetableForm.vue';
+import {actionTypes} from '@/store/modules/createTimetable';
+
 export default {
   name: 'CreateTimetable',
-  components: { TimetableForm },
+  components: {TimetableForm},
   data() {
     return {
       initialValues: {
-        subjects: '',
-        teachers: [],
-        building: '',
+        subject: '',
+        lecturer: {},
+        building: {},
         typeSubject: '',
-        groups: [],
-      },
+        groups: {}
+      }
     };
   },
   computed: {
     ...mapState({
-      isSubmiting: (state) => state.createTimetable.isSubmiting,
-      validationErrors: (state) => state.createTimetable.validationErrors,
-    }),
+      isSubmitting: state => state.createTimetable.isSubmiting,
+      validationErrors: state => state.createTimetable.validationErrors
+    })
   },
+
   methods: {
+    ...mapActions([actionTypes.createTimetable]),
     onSubmit(timetableInput) {
-      this.$store
-        .dispatch(actionTypes.createTimetable, { timetableInput })
-        .then((timetable) => {
-          this.$router.push({
-            name: 'mygeneraltimetable',
-            // params: { slug: timetable.slug },
-          });
-        });
-    },
-  },
+      this.$store.dispatch(actionTypes.createTimetable, {timetableInput});
+    }
+  }
 };
 </script>
