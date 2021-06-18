@@ -16,7 +16,7 @@
             data-target="dropdown"
             ref="dropdown"
           >
-            USER NAME
+            Сергей
             <i class="material-icons right">arrow_drop_down</i>
           </a>
 
@@ -46,19 +46,19 @@ export default {
   data: () => ({
     date: new Date(),
     interval: null,
-    dropdown: null,
+    dropdown: null
   }),
   methods: {
     logout() {
       this.$router.push('/login');
-    },
+    }
   },
   mounted() {
     this.interval = setInterval(() => {
       this.date = new Date();
     }, 1000);
     this.dropdown = M.Dropdown.init(this.$refs.dropdown, {
-      constrainWidth: false,
+      constrainWidth: false
     });
   },
   beforeDestroy() {
@@ -66,6 +66,6 @@ export default {
     if (this.dropdown && this.dropdown.destroy) {
       this.dropdown.destroy();
     }
-  },
+  }
 };
 </script>

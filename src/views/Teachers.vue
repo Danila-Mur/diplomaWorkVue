@@ -20,7 +20,7 @@
                     Выберите факультет
                   </option>
                   <option value="1">
-                    факультет 1
+                    ФКНТ
                   </option>
                   <option value="2">
                     факультет 2
@@ -36,7 +36,7 @@
                     Выберите кафедру
                   </option>
                   <option value="1">
-                    кафедра 1
+                    Программная инженерия
                   </option>
                   <option value="2">
                     кафедра 2
@@ -51,14 +51,22 @@
         </div>
         <div class="row"></div>
         <div class="row">
-          <div class="col s2">Фамилия</div>
-          <div class="col s2">Имя</div>
-          <div class="col s2">Отчество</div>
-          <div class="col s2">Логин</div>
-          <div class="col s2">Фото</div>
-          <div class="col s2">
-            Предметы преподователя которые может вести
-          </div>
+          <div class="col s3">Фамилия</div>
+          <div class="col s3">Имя</div>
+          <div class="col s3">Отчество</div>
+          <div class="col s3">Фото</div>
+        </div>
+        <div class="row">
+          <div class="col s3">Щедрин</div>
+          <div class="col s3">Сергей</div>
+          <div class="col s3">Валерьевич</div>
+          <div class="col s3"></div>
+        </div>
+        <div class="row">
+          <div class="col s3">Серёженко</div>
+          <div class="col s3">Ольга</div>
+          <div class="col s3">Александровна</div>
+          <div class="col s3"></div>
         </div>
       </div>
     </section>
@@ -191,7 +199,7 @@ export default {
   data: () => ({
     modalVisible: false,
     modalClass: '.modal',
-    instance: null,
+    instance: null
   }),
   mounted() {
     this.initModal();
@@ -199,13 +207,13 @@ export default {
   methods: {
     initModal: function() {
       M.Modal.init(this.$refs.modal, {
-        opacity: 0.7,
+        opacity: 0.7
       });
       this.instance = M.Modal.getInstance(this.$refs.modal);
     },
     openModal: function() {
       this.instance.open();
-    },
-  },
+    }
+  }
 };
 </script>

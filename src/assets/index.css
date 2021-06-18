@@ -222,3 +222,12 @@ caption {
   position: absolute;
   display: flex;
 }
+
+.faculties-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.item-list {
+  border-bottom: 1px solid rgb(190, 190, 190);
+}

@@ -18,30 +18,30 @@ export default new Vuex.Store({
             title: 'Мое расписание понедельно',
             open: false,
             url: '/mytimetable',
-            exact: true,
+            exact: true
           },
           {
             title: 'Мое расписание общее',
             open: false,
-            url: '/mygeneraltimetable',
+            url: '/mygeneraltimetable'
           },
           {
             title: 'Расписание другого преподователя',
             open: false,
-            url: '/login',
+            url: '/othertimetable'
           },
           {
             title: 'Общее расписание другого преподователя',
             open: false,
-            url: '/login',
+            url: '/login'
           },
           {
             title: 'Сгенерировать отчет',
             open: false,
-            url: '/generatereport',
+            url: '/generatereport'
           },
-          { title: 'Список переносов', open: false, url: '/login' },
-        ],
+          {title: 'Список переносов', open: false, url: '/login'}
+        ]
       },
       {
         title: 'Преподаватели',
@@ -50,43 +50,43 @@ export default new Vuex.Store({
           {
             title: 'Список преподавателей',
             open: false,
-            url: '/teachers',
-          },
-        ],
+            url: '/teachers'
+          }
+        ]
       },
       {
         title: 'Справочники',
         open: false,
         url: '/login',
         subnav: [
-          { title: 'Аудитории', open: false, url: '/audience' },
-          { title: 'Факультеты', open: false, url: '/login' },
-          { title: 'Должности', open: false, url: '/login' },
-          { title: 'Тип оплаты', open: false, url: '/login' },
-          { title: 'Тип обучения', open: false, url: '/login' },
-          { title: 'Тип занятий', open: false, url: '/login' },
-          { title: 'Праздники', open: false, url: '/login' },
-          { title: 'Кафедры', open: false, url: '/login' },
-          { title: 'Специальности', open: false, url: '/login' },
-          { title: 'Группы студентов', open: false, url: '/login' },
+          {title: 'Аудитории', open: false, url: '/audience'},
+          {title: 'Факультеты', open: false, url: '/faculties'},
+          {title: 'Должности', open: false, url: '/login'},
+          {title: 'Тип оплаты', open: false, url: '/login'},
+          {title: 'Тип обучения', open: false, url: '/educationtype'},
+          {title: 'Тип занятий', open: false, url: '/lessontype'},
+          {title: 'Праздники', open: false, url: '/login'},
+          {title: 'Кафедры', open: false, url: '/department '},
+          {title: 'Специальности', open: false, url: '/login'},
+          {title: 'Группы студентов', open: false, url: '/login'},
           {
             title: 'Список изучаемых предметов',
             open: false,
-            url: '/login',
-          },
-        ],
-      },
-    ],
+            url: '/login'
+          }
+        ]
+      }
+    ]
   },
   getters: {
-    navigation: (state) => {
+    navigation: state => {
       return state.navigation;
-    },
+    }
   },
   mutations: {},
   actions: {},
   modules: {
     timetable,
-    createTimetable,
-  },
+    createTimetable
+  }
 });

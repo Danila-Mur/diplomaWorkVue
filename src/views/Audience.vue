@@ -22,7 +22,7 @@
                     Выберите корпус
                   </option>
                   <option value="1">
-                    корпус 1
+                    корпус №1
                   </option>
                   <option value="2">
                     корпус 2
@@ -39,6 +39,26 @@
         <div class="row">
           <div class="col s6">Корпус</div>
           <div class="col s6">Аудитория</div>
+        </div>
+        <div class="row">
+          <div class="col s6">1</div>
+          <div class="col s6">6</div>
+        </div>
+        <div class="row">
+          <div class="col s6">1</div>
+          <div class="col s6">11</div>
+        </div>
+        <div class="row">
+          <div class="col s6">1</div>
+          <div class="col s6">14</div>
+        </div>
+        <div class="row">
+          <div class="col s6">1</div>
+          <div class="col s6">25</div>
+        </div>
+        <div class="row">
+          <div class="col s6">1</div>
+          <div class="col s6">23</div>
         </div>
       </div>
     </section>

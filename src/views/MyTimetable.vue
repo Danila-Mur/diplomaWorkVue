@@ -22,169 +22,84 @@
         <td>7</td>
       </tr>
       <tr>
-        <td>Пн</td>
+        <td>Mon</td>
         <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-          <hr />
           <span>Гражданская оборона</span>
           <br />
           <span>Ефимов В.Г.</span>
           <br />
-          <span><br />2.234</span><br />
-          <span><br />Лекция</span><br />
-          <span>Группа </span>
+          <span>2.234</span><br />
+          <span>Лекция</span><br />
+          <span>Пи-17А</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          <span>Гражданская оборона</span>
+          <br />
+          <span>Ефимов В.Г.</span>
+          <br />
+          <span>2.234</span><br />
+          <span>Лекция</span><br />
+          <span>Пи-17А</span>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Tue</td>
+        <td>
+          <span>Гражданская оборона</span>
+          <br />
+          <span>Ефимов В.Г.</span>
+          <br />
+          <span>2.234</span><br />
+          <span>Лекция</span><br />
           <span>Пи-17А</span>
         </td>
         <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-        </td>
-      </tr>
-      <tr>
-        <td>Вт</td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-          <hr />
           <span>Гражданская оборона</span>
           <br />
           <span>Ефимов В.Г.</span>
           <br />
-          <span>2.234</span>
-          <span>Лекция</span>
+          <span>2.234</span><br />
+          <span>Лекция</span><br />
+          <span>Пи-17А</span>
         </td>
+        <td></td>
         <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-          <hr />
           <span>Гражданская оборона</span>
           <br />
           <span>Ефимов В.Г.</span>
           <br />
-          <span>2.234</span>
-          <span>Лекция</span>
+          <span>2.234</span><br />
+          <span>Лекция</span><br />
+          <span>Пи-17А</span>
         </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-          <hr />
-          <span>Гражданская оборона</span>
-          <br />
-          <span>Ефимов В.Г.</span>
-          <br />
-          <span>2.234</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-          <hr />
-          <span>Гражданская оборона</span>
-          <br />
-          <span>Ефимов В.Г.</span>
-          <br />
-          <span>2.234</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-          <hr />
-          <span>Гражданская оборона</span>
-          <br />
-          <span>Ефимов В.Г.</span>
-          <br />
-          <span>2.234</span>
-          <span>Лекция</span>
-        </td>
-        <td>
-          <span>Численные методы в информатике</span>
-          <br />
-          <span>Судаков С.Н.</span>
-          <br />
-          <span>5.427</span>
-          <span>Лекция</span>
-          <hr />
-          <span>Гражданская оборона</span>
-          <br />
-          <span>Ефимов В.Г.</span>
-          <br />
-          <span>2.234</span>
-          <span>Лекция</span>
-        </td>
+        <td></td>
+        <td></td>
         <td></td>
       </tr>
       <tr>
-        <td>Ср</td>
+        <td>Wed</td>
+        <td></td>
+        <td></td>
+        <td>
+          <span>Гражданская оборона</span>
+          <br />
+          <span>Ефимов В.Г.</span>
+          <br />
+          <span>2.234</span><br />
+          <span>Лекция</span><br />
+          <span>Пи-17А</span>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Thu</td>
         <td></td>
         <td></td>
         <td></td>
@@ -194,7 +109,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>Чт</td>
+        <td>Fri</td>
         <td></td>
         <td></td>
         <td></td>
@@ -204,7 +119,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>Пт</td>
+        <td>Sat</td>
         <td></td>
         <td></td>
         <td></td>
@@ -214,17 +129,7 @@
         <td></td>
       </tr>
       <tr>
-        <td>Сб</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Вс</td>
+        <td>Sun</td>
         <td></td>
         <td></td>
         <td></td>
@@ -260,13 +165,13 @@ export default {
             'Сен',
             'Окт',
             'Ноя',
-            'Дек',
+            'Дек'
           ],
           weekdaysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-          firstDayOfWeek: 1,
-        },
-      },
+          firstDayOfWeek: 1
+        }
+      }
     };
-  },
+  }
 };
 </script>
